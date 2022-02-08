@@ -51,13 +51,48 @@ Run :checkhealth again, everything should be ok now.
 Now you have Neovim installed with Python provider support enabled.
 
 
-### install plug manager
+### Install plug manager
 [junegunn/vim-plug](https://github.com/junegunn/vim-plug#unix-linux) is a very popular minimalistic plugin manager.
 Copy this instruction to your terminal and run.
 ```
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
+
+
+### Install plug
+
+[tpope/vim-commentary](https://github.com/tpope/vim-commentary#installation)allows you to press gcc to comment out a line or gc to comment a selection in visual mode.
+Installation:
+```
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/commentary.git
+vim -u NONE -c "helptags commentary/doc" -c q
+```
+
+Other plug are in the init.vim, instruction :PlugInstall is be ok.
+
+### Plug usage
+#### Vista
+Commands
+Command	Description
+Vista	Open/Close vista window for viewing tags or LSP symbols
+Vista!	Close vista view window if already opened
+Vista!!	Toggle vista view window
+:Vista [EXECUTIVE]: open vista window powered by EXECUTIVE.
+
+:Vista finder [EXECUTIVE]: search tags/symbols generated from EXECUTIVE.
+
+See :help vista-commands for more information.
+
+
+
+
+
+
+
+
 
 
 
