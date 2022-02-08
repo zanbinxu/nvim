@@ -39,9 +39,27 @@ Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 " jeetsukumaran/vim-pythonsense provides some Python-specific text objects & motions to help you navigate within your file.
 Plug 'jeetsukumaran/vim-pythonsense'
 
+" File navigation
 " junefunn/fzf to help you find that file as quickly as possible using fuzzy search 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Python
+" Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
+Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
+" Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
+" Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
+" Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
+" Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
+
+" Go
+Plug 'fatih/vim-go' , { 'for': ['go', 'vim-plug'], 'tag': '*' }
+
+" Markdown
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
+Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown', 'vim-plug'] }
+Plug 'dkarter/bullets.vim'
 
 
 Plug 'preservim/nerdtree' " NerdTree
