@@ -61,17 +61,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 
 ### Install plug
-
-[tpope/vim-commentary](https://github.com/tpope/vim-commentary#installation)allows you to press gcc to comment out a line or gc to comment a selection in visual mode.
-Installation:
-```
-mkdir -p ~/.vim/pack/tpope/start
-cd ~/.vim/pack/tpope/start
-git clone https://tpope.io/vim/commentary.git
-vim -u NONE -c "helptags commentary/doc" -c q
-```
-
-Other plug are in the init.vim, instruction :PlugInstall is be ok.
+Plug are in the init.vim, instruction :PlugInstall is be ok.
 
 ### Plug usage
 #### Vista
