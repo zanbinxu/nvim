@@ -18,6 +18,7 @@
 set number
 set relativenumber
 set autoindent
+set hidden
 set noexpandtab
 set smarttab
 set tabstop=2
