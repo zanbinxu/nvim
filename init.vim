@@ -8,17 +8,8 @@
 
 
 " ===
-" === Auto load for first time uses
+" === Load plug for PlugInstall
 " ===
-if empty(glob($HOME.'/.config/nvim/autoload/plug.vim'))
-	silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs
-				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-if empty(glob($HOME.'/.config/nvim/plugged/wildfire.vim/autoload/wildfire.vim'))
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
 
 
 " ===
@@ -32,5 +23,38 @@ endif
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+
+
+" ===
+" === Install Plugins with Vim-Plug
+" ===
+
+call plug#begin('$HOME/.config/nvim/plugged')
+
+Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
+Plug 'https://github.com/preservim/nerdtree' " NerdTree
+Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+
+
+
+
+
+set encoding=UTF-8
+
+call plug#end()
+
+
+" NERFTree config
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
+
+
+
 
 
